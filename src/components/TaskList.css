@@ -1,0 +1,68 @@
+/* TaskList.css */
+
+/* Define o fundo com um degradê linear usando duas cores e garante que cubra toda a tela */
+.tasklist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  /* Centraliza o conteúdo verticalmente */
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #3498db, #2ecc71);  /* Degradê do azul para o verde */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  /* Remove a rolagem */
+  }
+  
+  .tasklist-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.9);  /* Cor de fundo com leve transparência */
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;  /* Garante que padding e border sejam incluídos na largura e altura */
+  }
+  
+  .tasklist-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  
+  .tasklist-input {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .tasklist-button {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+  
+  .tasklist-items {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;  /* Garante que padding e border sejam incluídos na largura e altura */
+  }
+  
+  .tasklist-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  
+  .tasklist-item:last-child {
+    border-bottom: none;
+  }
+  
